@@ -6,6 +6,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.net.SocketException;
 
@@ -41,7 +42,7 @@ public class ChatClientImpl extends Thread implements ChatClient {
     @Override
     public boolean sendMessage(String message) {
         try {
-            Message msg = new Message(message, username);
+            Message msg = new Message(message, username, new Date());
             out.writeObject(msg);
             return true;
         } catch (SocketException e) {
