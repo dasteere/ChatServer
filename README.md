@@ -33,3 +33,4 @@ In order to connect to a server, you will be prompted for the following informat
 |Host IP    |The IP address of the chat server or "localhost" if you plan to run things locally   |
 
 Please note that in order to connect to the server, the server must be **running**.
+gui timestampz
