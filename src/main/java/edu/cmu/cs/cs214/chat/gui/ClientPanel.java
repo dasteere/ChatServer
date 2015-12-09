@@ -204,7 +204,7 @@ public class ClientPanel extends JPanel implements ClientChangeListener {
         // Date#getMinute, Date#getHour etc are deprecated in favor of this
         // method
 
-        String newText = String.format(" %s: %s%n", msg.getSender(),
+        String newText = String.format("%s %s: %s%n", msg.getTimestamp(), msg.getSender(),
                 msg.getContent());
         this.chatArea.append(newText);
         chatArea.setCaretPosition(chatArea.getDocument().getLength());

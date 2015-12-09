@@ -5,6 +5,7 @@ package edu.cmu.cs.cs214.chat.gui;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Date;
 
 import javax.swing.JTextField;
 
